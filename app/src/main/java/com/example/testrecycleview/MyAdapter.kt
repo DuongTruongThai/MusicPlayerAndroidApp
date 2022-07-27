@@ -20,9 +20,7 @@ class MyAdapter : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        //val currentItem = itemList[position]
         holder.bindingData(list.get(position))
-
     }
 
     override fun getItemCount(): Int {
