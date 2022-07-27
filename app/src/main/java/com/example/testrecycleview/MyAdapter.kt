@@ -33,7 +33,7 @@ class MyAdapter : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
         private val itemText : TextView = itemView.findViewById(R.id.tvSongName);
 
         fun bindingData(songData: SongData){
-            itemText.text = songData.title.toString()
+            itemText.text = songData.title
         }
 
         init {
